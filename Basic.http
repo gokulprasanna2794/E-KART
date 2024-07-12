@@ -1,0 +1,50 @@
+GET http://localhost:8085/Ecart/
+
+###
+
+POST http://localhost:8085/Ecart/
+Content-Type: application/json
+
+{
+   "receiverName":"Gokul",
+   "receiverContact":6789900,
+   "receiverAddress":"from namakkal",
+   "itemPrice":78,
+   "itemStatus":"transmitt",
+   "executiveName":"prasanna"
+
+}
+
+
+####
+POST http://localhost:8085/Ecart/
+Content-Type: application/json
+
+{
+   "receiverName":"prasanna",
+   "receiverContact":789007665,
+   "receiverAddress":"from salem",
+   "itemPrice":8906,
+   "itemStatus":"received",
+   "executiveName":"ajay"
+
+}
+
+###
+
+DELETE http://localhost:8085/Ecart/1
+
+###
+
+PUT http://localhost:8085/patient/
+Content-Type: application/json
+
+{
+    "patientId": 918,
+    "patientName": "gokul",
+    "age": 19,
+    "bloodGroup": "O+",
+    "address": "SAlem",
+    "contact": 9876565523,
+    "issue": "Fever"
+}
